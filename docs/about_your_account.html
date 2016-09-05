@@ -1,0 +1,148 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Welcome! &#8212; OPRF Cluster User Docs 0.1 documentation</title>
+    
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="OPRF Cluster User Docs 0.1 documentation" href="index.html" />
+    <link rel="next" title="Scheduling Jobs on OPRF Cluster" href="scheduling_jobs.html" />
+    <link rel="prev" title="Welcome to OPRF Cluster User Documentation!" href="index.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body role="document">
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="welcome">
+<h1>Welcome!<a class="headerlink" href="#welcome" title="Permalink to this headline">¶</a></h1>
+<p>An account for OpenPOWER Research Facility at IIT Bombay(OPRF) grants you shell access to the OPRF POWER8 Cluster.</p>
+<p>To access this cluster you can use the <code class="docutils literal"><span class="pre">ssh</span></code> client available in almost all *nix distributions like Linux. If you are a Windows user, you can use a software like <a class="reference external" href="http://mobaxterm.mobatek.net/demo.html#">MobaXTerm</a>, <a class="reference external" href="https://www.bitvise.com/ssh-client-download">putty</a> or <a class="reference external" href="https://www.bitvise.com/ssh-client-download">Bitvise SSH Client</a>. We recommend that you gain familiarity with Linux, if you already havne&#8217;t, to be able to use OPRF effectively.</p>
+<p>Once you login on the cluster using the information that you received in the Welcome email from OPRF Team, you will get a shell prompt on a machine called <strong>ipaserver</strong>. This is the machine from which you can schedule your jobs to run on the OPRF.</p>
+<p>Your home directory is at <cite>/home/oprfusers/YOUR_USERNAME</cite>.</p>
+<p>Inside your home directory you will find following:</p>
+<ul>
+<li><dl class="first docutils">
+<dt><cite>scratch</cite> directory:</dt>
+<dd><p class="first last">This directory is for your programs and jobs to use as a temporary scratch space or for storing the results of computation.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt><cite>code</cite> directory:</dt>
+<dd><p class="first last">This is where you should store your own code or the software that you will compile and install for running on the OPRF.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt><cite>results</cite> directory:</dt>
+<dd><p class="first last">Same as <cite>code</cite>. <cite>results</cite> is a symbolic link to the <cite>scratch</cite> directory for convenience.</p>
+</dd>
+</dl>
+</li>
+</ul>
+<p>The above directories each have been granted a different disk usage limit based on observed needs of users. Thus, we strongly recommend that you use the directories for their suitable purposes and do not try and store everything inside your home directory as it has a quota limit too.</p>
+</div>
+<div class="section" id="frequently-asked-questions">
+<h1>Frequently Asked Questions<a class="headerlink" href="#frequently-asked-questions" title="Permalink to this headline">¶</a></h1>
+<ul>
+<li><p class="first">A software that I need is not present on OPRF! What should I do ?</p>
+<p>We recommend you install required software and libraries inside the <cite>code</cite> directory in your home directory. We do not provide <em>sudo</em> access or administrative permissions to any user and will install a software system-wide <em>if and only if</em> we find that a good enough number of users need it.</p>
+</li>
+<li><p class="first">How do I copy a file to OPRF? How do I copy a file from OPRF?</p>
+<p>You can use the <cite>scp</cite> command and the same credentials and connection details that you received in your Welcome email. You have complete read and write access over your home directory which you can refer as <cite>/home/oprfusers/YOUR_USERNAME</cite> or <cite>~YOUR_USERNAME</cite>. You can also use the <strong>SFTP</strong> functionality in your SSH Client to copy files to and from the OPRF Cluster.</p>
+</li>
+<li><p class="first">How do I download a file from Internet on the OPRF Cluster? How do I clone a github repo on OPRF ? How do I download my software on OPRF cluster?</p>
+<p>Internet access is not available to OPRF Users on the cluster. We recommend you download the files locally, compress them in an archive using ZIP or Bzip2 compression and then copy them to OPRF. If your software is very big, you may request the system administrators for directly downloading it on the cluster.</p>
+</li>
+<li><p class="first">My question is not answered here. I need some urgent help!</p>
+<p>Email the OPRF team at <cite>help AT oprfiitb DOT in</cite></p>
+</li>
+</ul>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Welcome!</a></li>
+<li><a class="reference internal" href="#frequently-asked-questions">Frequently Asked Questions</a></li>
+</ul>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="index.html" title="previous chapter">Welcome to OPRF Cluster User Documentation!</a></li>
+      <li>Next: <a href="scheduling_jobs.html" title="next chapter">Scheduling Jobs on OPRF Cluster</a></li>
+  </ul></li>
+</ul>
+</div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/about_your_account.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2016, OPRF Team.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.4.6</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.9</a>
+      
+      |
+      <a href="_sources/about_your_account.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

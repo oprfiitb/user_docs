@@ -11,6 +11,7 @@ Contents:
 .. toctree::
    :maxdepth: 2
 
+   about_your_account 
    scheduling_jobs
    node1_details
    node2_details

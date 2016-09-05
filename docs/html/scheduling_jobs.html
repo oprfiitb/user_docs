@@ -1,0 +1,141 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Scheduling Jobs on OPRF Cluster &#8212; OPRF Cluster User Docs 0.1 documentation</title>
+    
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="OPRF Cluster User Docs 0.1 documentation" href="index.html" />
+    <link rel="next" title="Compute Node 1" href="node1_details.html" />
+    <link rel="prev" title="Welcome to OPRF Cluster User Documentation!" href="index.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body role="document">
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="scheduling-jobs-on-oprf-cluster">
+<h1>Scheduling Jobs on OPRF Cluster<a class="headerlink" href="#scheduling-jobs-on-oprf-cluster" title="Permalink to this headline">¶</a></h1>
+<p>The OpenPOWER Research Facility at IIT Bombay uses the IBM Spectrum Load Sharing Facility (LSF) for scheduling the jobs on it&#8217;s cluster.</p>
+<p><strong>Submitting a job</strong></p>
+<p>To submit a job, use</p>
+<p><code class="docutils literal"><span class="pre">bsub</span> <span class="pre">-q</span> <span class="pre">&quot;queue_name&quot;(short|normal)</span> <span class="pre">-n</span> <span class="pre">total_no_of_cores(N)</span> <span class="pre">-R</span> <span class="pre">resourcetype(cs|gpu|capi)</span>&#160; <span class="pre">-W</span> <span class="pre">walltime</span> <span class="pre">(HH:MM)</span> <span class="pre">-J</span> <span class="pre">jobname</span> <span class="pre">-j</span> <span class="pre">jobfilename</span></code></p>
+<p><strong>Queues</strong></p>
+<p>We currently provide two queues:</p>
+<ul>
+<li><p class="first">Short</p>
+<p>This is for short usage. Less than an hour.</p>
+</li>
+<li><p class="first">Normal</p>
+<p>This is for long usage. More than an hour</p>
+</li>
+</ul>
+<p><strong>Total No of Cores</strong></p>
+<p>Here, you provide the total number of cores you will use.</p>
+<p>Look at each node to see the number of cores available.</p>
+<p><strong>Resources</strong></p>
+<p>The OPRF Cluster provides various kind of resources along with the POWER8 CPU Power.</p>
+<p>Read each node&#8217;s information to see the type of resources available on it.</p>
+<p><strong>Walltime</strong></p>
+<p>Wall time is your estimate of how long a job will run. Once your job exceeds this time limit, it will stop.
+If you don&#8217;t specify the wall time, it is unlimited by default.</p>
+<p><strong>Jobname</strong></p>
+<p>Name for the job for reference purposes.</p>
+<p><strong>Jobfilename</strong></p>
+<p>You can put all the info about the that you gave <em>bsub</em> in options, along with the various steps required to execute the job inside a single file and then give that file to <em>bsub</em>.</p>
+<p><strong>Once you have submitted a job</strong></p>
+<p><code class="docutils literal"><span class="pre">bjobs</span> <span class="pre">-l</span> <span class="pre">jobID</span></code>
+If submited succesfully <em>bsub</em> will return a jobID with the queue in which the job is submitted.</p>
+<p>For history about the submited job, use
+<code class="docutils literal"><span class="pre">bjobs</span> <span class="pre">-l</span> <span class="pre">jobID</span></code></p>
+<p>For information about <em>all</em> jobs you have submited, use
+<code class="docutils literal"><span class="pre">bhist</span> <span class="pre">jobID</span></code></p>
+<p><strong>Further reading</strong></p>
+<p>For more help on using LSF scheduler please refer to the following links</p>
+<ul class="simple">
+<li><a class="reference external" href="http://research.computing.yale.edu/hpc-support/user-guide/lsf">User guide of LSF at Yale University</a>.</li>
+</ul>
+<ul class="simple">
+<li><a class="reference external" href="https://www.ibm.com/developerworks/community/wikis/form/anonymous/api/wiki/99245193-fced-40e5-90df-a0e9f50a0fb0/page/22e9aefe-a2e8-46e6-ad62-2ff5860f45aa/attachment/f8aad44b-8e1c-4051-95c9-d2c80fe90cf3/media/lsf_command_ref.pdf">IBM reference docs on LSF</a>.</li>
+</ul>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper"><div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="index.html" title="previous chapter">Welcome to OPRF Cluster User Documentation!</a></li>
+      <li>Next: <a href="node1_details.html" title="next chapter">Compute Node 1</a></li>
+  </ul></li>
+</ul>
+</div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/scheduling_jobs.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2016, OPRF Team.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.4.6</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.9</a>
+      
+      |
+      <a href="_sources/scheduling_jobs.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

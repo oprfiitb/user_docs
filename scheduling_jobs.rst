@@ -57,6 +57,12 @@ For information about *all* jobs you have submited, use
 **Further reading**
 
 For more help on using LSF scheduler please refer to the following links
-1.http://research.computing.yale.edu/hpc-support/user-guide/lsf
-2.https://www.ibm.com/developerworks/community/wikis/form/anonymous/api/wiki/99245193-fced-40e5-90df-a0e9f50a0fb0/page/22e9aefe-a2e8-46e6-ad62-2ff5860f45aa/attachment/f8aad44b-8e1c-4051-95c9-d2c80fe90cf3/media/lsf_command_ref.pdf
+
+* `User guide of LSF at Yale University`_.
+
+.. _User guide of LSF at Yale University: http://research.computing.yale.edu/hpc-support/user-guide/lsf
+
+* `IBM reference docs on LSF`_.
+
+.. _IBM reference docs on LSF: https://www.ibm.com/developerworks/community/wikis/form/anonymous/api/wiki/99245193-fced-40e5-90df-a0e9f50a0fb0/page/22e9aefe-a2e8-46e6-ad62-2ff5860f45aa/attachment/f8aad44b-8e1c-4051-95c9-d2c80fe90cf3/media/lsf_command_ref.pdf
 

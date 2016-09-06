@@ -6,7 +6,7 @@ To access this cluster you can use the ``ssh`` client available in almost all \*
 
 Once you login on the cluster using the information that you received in the Welcome email from OPRF Team, you will get a shell prompt on a machine called **ipaserver**. This is the machine from which you can schedule your jobs to run on the OPRF.
 
-Your home directory is at `/home/oprfusers/YOUR_USERNAME`.
+Your home directory is at `/home/oprfusers/YOUR_USERNAME`. There is a hard limit of **3 GB** on your home directory.
 
 Inside your home directory you will find following:
 
@@ -17,7 +17,7 @@ Inside your home directory you will find following:
 * `results` directory:
     Same as `code`. `results` is a symbolic link to the `scratch` directory for convenience.
 
-The above directories each have been granted a different disk usage limit based on observed needs of users. Thus, we strongly recommend that you use the directories for their suitable purposes and do not try and store everything inside your home directory as it has a quota limit too.
+The above directories each have been granted a different disk usage limit based on observed needs of users. Thus, we strongly recommend that you use the directories for their suitable purposes and do not try and store everything inside your home directory.
 
 Frequently Asked Questions
 --------------------------

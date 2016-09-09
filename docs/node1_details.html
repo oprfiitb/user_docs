@@ -45,36 +45,84 @@
 <h1>Compute Node 1<a class="headerlink" href="#compute-node-1" title="Permalink to this headline">¶</a></h1>
 <p>Model: S8247-42L (aka S824L)
 (CPU-GPU-Resource)</p>
-<ol class="arabic simple">
-<li>CPU: IBM POWER8 Processor 3.42 GHz 20 Core CPU (8 threads/core)</li>
-</ol>
-<p>Architecture:          ppc64le
-Byte Order:            Little Endian
-CPU(s):                160
-On-line CPU(s) list:   0-159
-Thread(s) per core:    8
-Core(s) per socket:    5
-Socket(s):             4
-NUMA node(s):          4
-Model:                 8247-42L
-L1d cache:             64K
-L1i cache:             32K
-L2 cache:              512K
-L3 cache:              8192K
-NUMA node0 CPU(s):     0-39
-NUMA node1 CPU(s):     40-79
-NUMA node16 CPU(s):    80-119
-NUMA node17 CPU(s):    120-159</p>
-<ol class="arabic simple" start="2">
-<li>RAM: 256 GB of RAM</li>
-<li>GPU: 1 X Nvidia Tesla K40 GPU (soon will be upgraded to Nvidia Tesla K80)</li>
-</ol>
-<p><a class="reference external" href="https://www.nvidia.com/content/PDF/kepler/Tesla-K40-Active-Board-Spec-BD-06949-001_v03.pdf">https://www.nvidia.com/content/PDF/kepler/Tesla-K40-Active-Board-Spec-BD-06949-001_v03.pdf</a></p>
-<ol class="arabic simple" start="4">
-<li>STORAGE: 8 x 1TB SSHD (running with GlusterFS)</li>
-<li>INTERCONNECT: Mellanox ConnectX-3 Pro VPI adapter card, FDR IB</li>
-<li>OPERATING SYSTEM: Ubuntu 14.04.3 LTS</li>
-</ol>
+<div class="line-block">
+<div class="line">1. CPU: IBM POWER8 Processor 3.42 GHz 20 Core CPU (8 threads/core).</div>
+</div>
+<p>POWER8E (raw), altivec supported</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="60%" />
+<col width="40%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>Architecture:</td>
+<td>ppc64le</td>
+</tr>
+<tr class="row-even"><td>Byte Order:</td>
+<td>Little Endian</td>
+</tr>
+<tr class="row-odd"><td>CPU(s):</td>
+<td>160</td>
+</tr>
+<tr class="row-even"><td>On-line CPU(s) list:</td>
+<td>0-159</td>
+</tr>
+<tr class="row-odd"><td>Thread(s) per core:</td>
+<td>8</td>
+</tr>
+<tr class="row-even"><td>Core(s) per socket:</td>
+<td>5</td>
+</tr>
+<tr class="row-odd"><td>Socket(s):</td>
+<td>4</td>
+</tr>
+<tr class="row-even"><td>NUMA node(s):</td>
+<td>4</td>
+</tr>
+<tr class="row-odd"><td>Model:</td>
+<td>8247-42L</td>
+</tr>
+<tr class="row-even"><td>L1d cache:</td>
+<td>64K</td>
+</tr>
+<tr class="row-odd"><td>L1i cache:</td>
+<td>32K</td>
+</tr>
+<tr class="row-even"><td>L2 cache:</td>
+<td>512K</td>
+</tr>
+<tr class="row-odd"><td>L3 cache:</td>
+<td>8192K</td>
+</tr>
+<tr class="row-even"><td>NUMA node0 CPU(s):</td>
+<td>0-39</td>
+</tr>
+<tr class="row-odd"><td>NUMA node1 CPU(s):</td>
+<td>40-79</td>
+</tr>
+<tr class="row-even"><td>NUMA node16 CPU(s):</td>
+<td>80-119</td>
+</tr>
+<tr class="row-odd"><td>NUMA node17 CPU(s):</td>
+<td>120-159</td>
+</tr>
+</tbody>
+</table>
+<div class="line-block">
+<div class="line">2. RAM: 256 GB of RAM with 43 Gigabytes of Swap.</div>
+</div>
+<div class="line-block">
+<div class="line">3. GPU: 1 X <a class="reference external" href="https://www.nvidia.com/content/PDF/kepler/Tesla-K40-Active-Board-Spec-BD-06949-001_v03.pdf">Nvidia Tesla K40 GPU</a>. (soon will be upgraded to <a class="reference external" href="https://images.nvidia.com/content/pdf/kepler/Tesla-K80-BoardSpec-07317-001-v05.pdf">Nvidia Tesla K80</a>.)</div>
+</div>
+<div class="line-block">
+<div class="line">4. STORAGE: 8 x 1TB SSHD (running with GlusterFS)</div>
+</div>
+<div class="line-block">
+<div class="line">5. INTERCONNECT: Mellanox ConnectX-3 Pro VPI adapter card, FDR IB</div>
+</div>
+<div class="line-block">
+<div class="line">6. OPERATING SYSTEM: Ubuntu 14.04.3 LTS</div>
+</div>
 </div>
 
 
